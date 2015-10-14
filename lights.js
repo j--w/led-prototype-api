@@ -11,10 +11,10 @@ module.exports = function() {
   };
 
   return {
-    lightsOn: function(floor) {
+    on: function(floor) {
       pwm.setPwm(floorToAddress[floor], 0, 4095);
     },
-    lightsOff: function(floor) {
+    off: function(floor) {
       pwm.setPwm(floorToAddress[floor], 0, 0);
     },
     allOn: function() {
