@@ -1,7 +1,7 @@
 var express = require('express');
 var lights = require('./lights');
 var app = express();
-var app = lights();
+var lights = lights();
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', function(req, res) {
