@@ -20,4 +20,4 @@ app.get('/light/:floor/off', function(req, res) {
   res.send(200);
 });
 
-app.listen(1337);
+app.listen(1337, '0.0.0.0');
